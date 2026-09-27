@@ -93,6 +93,10 @@
             AnimalShelter<Dog> dogShelter = new AnimalShelter<Dog>();
             AnimalShelter<Cat> catShelter = new AnimalShelter<Cat>();
             #endregion
+            #region Q12
+            // Multiple constraints are applied by separating them with commas after 'where T :'.
+            // Order rule: Class/Base class constraint first, then Interfaces, then new() last.
+            #endregion
         }
     }
 }
