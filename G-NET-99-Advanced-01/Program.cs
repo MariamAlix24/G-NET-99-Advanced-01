@@ -75,6 +75,17 @@
             Car myCar = creator.CreateInstance();
             Console.WriteLine("Car Name: " + myCar.Name);
             #endregion
+            #region Q10
+            // The interface constraint (where T : IInterfaceName) specifies that 
+            // the type parameter T must implement a specific interface. 
+            // This ensures that T contains all the methods defined by that interface.
+            Document mydocument = new Document();
+            Printer<Document> myprinter = new Printer<Document>();
+            myprinter.PrintItem(mydocument);
+            File fileone = new File();
+            Printer<File> myprinter1 = new Printer<File>();
+            myprinter1.PrintItem(fileone);
+            #endregion
         }
     }
 }
