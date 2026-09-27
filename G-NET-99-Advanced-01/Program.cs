@@ -97,6 +97,14 @@
             // Multiple constraints are applied by separating them with commas after 'where T :'.
             // Order rule: Class/Base class constraint first, then Interfaces, then new() last.
             #endregion
+            #region Q13
+            Defult<int> intContainer = new Defult<int>();
+            int defaultInt = intContainer.GetDefaultValue(); // Result: 0
+            Console.WriteLine(defaultInt);
+            Defult<string> strContainer = new Defult<string>();
+            string defaultStr = strContainer.GetDefaultValue(); // Result: null
+            Console.WriteLine("NULL" + defaultStr);
+            #endregion
         }
     }
 }
