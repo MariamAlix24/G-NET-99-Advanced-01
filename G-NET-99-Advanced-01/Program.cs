@@ -30,6 +30,16 @@
             Pair<int, string> mariam = new Pair<int, string>(1, "mariam ali");
             Console.WriteLine($"{mariam.Key}:{mariam.Value}");
             #endregion
+            #region Q4
+            // A generic method is a method defined with type parameters <T>, 
+            // allowing it to process different data types using a single implementation.
+            //test class SwapTest
+            int firstnum = 5;
+            int secondnum = 10;
+            Console.WriteLine("Before Swap: firstnum = " + firstnum + ", secondnum = " + secondnum);
+            SwapTest.Swap(ref firstnum, ref secondnum);
+            Console.WriteLine("After Swap:  firstnum = " + firstnum + ", secondnum = " + secondnum);
+            #endregion
         }
     }
 }
