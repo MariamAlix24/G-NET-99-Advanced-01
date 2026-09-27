@@ -56,6 +56,12 @@
             string result1 = task.GetById(695);
             Console.WriteLine(result1);
             #endregion
+            #region Q7
+            // The 'struct' constraint (where T : struct) specifies that 
+            // the type parameter T must be a value type (like int, double, or bool).
+            Calculator<int> teststuctvalue = new Calculator<int>();//int is struct
+            teststuctvalue.Number = 10;
+            #endregion
         }
     }
 }
