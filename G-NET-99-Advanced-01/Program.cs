@@ -136,6 +136,12 @@
             //    - Restricts T to input only (method parameters).
             //    - Direction: Parent -> Child (Action<Animal> to Action<Dog>).
             #endregion
+            #region Q18
+            // Static members are not shared between different types of a generic class. 
+            // Each type gets its own unique copy of the static member.
+            Counter<int>.Count = 5;//5
+            Counter<string>.Count = 10;//10 because string is a different type
+            #endregion
         }
     }
 }
