@@ -86,6 +86,13 @@
             Printer<File> myprinter1 = new Printer<File>();
             myprinter1.PrintItem(fileone);
             #endregion
+            #region Q11
+            // The base class constraint (where T : BaseClassName) specifies that 
+            // the type parameter T must inherit from a specific base class, 
+            // or be that base class itself.
+            AnimalShelter<Dog> dogShelter = new AnimalShelter<Dog>();
+            AnimalShelter<Cat> catShelter = new AnimalShelter<Cat>();
+            #endregion
         }
     }
 }
