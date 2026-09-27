@@ -13,6 +13,15 @@
             // 2. Code Reusability: Allows writing one class that works with multiple data types.
             // 3. Cleaner Code: Eliminates the need for manual type casting.
             #endregion
+            #region Q2
+            //test Class Container
+            Container<int> num = new Container<int>();
+            num.Add(2566);
+            Console.WriteLine(num.Get());
+            Container<string> text = new Container<string>();
+            text.Add("hahaha");
+            Console.WriteLine(text.Get());
+            #endregion
         }
     }
 }
