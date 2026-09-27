@@ -67,6 +67,14 @@
             // the type parameter T must be a reference type (like a class or string).
             Data<string> dataref = new Data<string>();
             #endregion
+            #region Q9
+            // The 'new()' constraint specifies that the type parameter T must have 
+            // a public parameterless constructor. 
+            // This allows you to instantiate objects of type T using 'new T()'.
+            CreatNew<Car> creator = new CreatNew<Car>();
+            Car myCar = creator.CreateInstance();
+            Console.WriteLine("Car Name: " + myCar.Name);
+            #endregion
         }
     }
 }
