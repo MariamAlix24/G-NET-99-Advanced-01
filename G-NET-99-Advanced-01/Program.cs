@@ -22,6 +22,14 @@
             text.Add("hahaha");
             Console.WriteLine(text.Get());
             #endregion
+            #region Q3
+            //Multiple type parameters allow a generic class or method to work with
+            //more than one placeholder data type like <TKey, TValue>.
+            //This is useful when data needs to be stored in pairs or key-value relationships.
+            //test class Pair
+            Pair<int, string> mariam = new Pair<int, string>(1, "mariam ali");
+            Console.WriteLine($"{mariam.Key}:{mariam.Value}");
+            #endregion
         }
     }
 }
