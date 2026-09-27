@@ -142,6 +142,19 @@
             Counter<int>.Count = 5;//5
             Counter<string>.Count = 10;//10 because string is a different type
             #endregion
+            #region Q19
+            // We can inherit in two ways:
+            // 1. Specify a fixed type (Closed):
+            //    class StringChild : Parent<string>
+            // 2. Keep it generic (Open):
+            //    class GenericChild<T> : Parent<T>
+            StringChild child1 = new StringChild();
+            child1.Data = "Helloooo";
+            Console.WriteLine(child1.Data);
+            GenericChild<int> child2 = new GenericChild<int>();
+            child2.Data = 123;
+            Console.WriteLine(child2.Data);
+            #endregion
         }
     }
 }
