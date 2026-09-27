@@ -40,6 +40,10 @@
             SwapTest.Swap(ref firstnum, ref secondnum);
             Console.WriteLine("After Swap:  firstnum = " + firstnum + ", secondnum = " + secondnum);
             #endregion
+            #region Q5
+            int maxNumber = Math.FindMax(10, 20);
+            Console.WriteLine(maxNumber);
+            #endregion
         }
     }
 }
