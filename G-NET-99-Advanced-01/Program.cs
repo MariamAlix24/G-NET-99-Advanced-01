@@ -119,6 +119,13 @@
             // It restricts T to be used only as a return type (output) of methods, 
             // never as an input parameter.
             #endregion
+            #region Q16
+            // Contravariance allows you to use a less derived type (parent class) 
+            // than originally specified.
+            // The 'in' keyword enables contravariance on a generic type parameter (T).
+            // It restricts T to be used only as an input parameter (method arguments), 
+            // never as a return type.
+            #endregion
         }
     }
 }
