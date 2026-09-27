@@ -105,6 +105,13 @@
             string defaultStr = strContainer.GetDefaultValue(); // Result: null
             Console.WriteLine("NULL" + defaultStr);
             #endregion
+            #region Q14
+            SafeList<string> names = new SafeList<string>();
+            names.Add("Ahmed");
+            names.Add("Mona");
+            Console.WriteLine(names.GetAt(0));
+            Console.WriteLine(names.GetAt(10) ?? "Invalid Index!");
+            #endregion
         }
     }
 }
