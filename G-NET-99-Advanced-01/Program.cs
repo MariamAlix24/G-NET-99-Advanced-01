@@ -62,6 +62,11 @@
             Calculator<int> teststuctvalue = new Calculator<int>();//int is struct
             teststuctvalue.Number = 10;
             #endregion
+            #region Q8
+            // The 'class' constraint (where T : class) specifies that 
+            // the type parameter T must be a reference type (like a class or string).
+            Data<string> dataref = new Data<string>();
+            #endregion
         }
     }
 }
