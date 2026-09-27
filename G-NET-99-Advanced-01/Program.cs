@@ -155,6 +155,19 @@
             child2.Data = 123;
             Console.WriteLine(child2.Data);
             #endregion
+            #region Q20
+            Cache<int, string> cache = new Cache<int, string>();
+            cache.Add(1, "Ahmed", 3);
+            Console.WriteLine("Contains Key 1? " + cache.Contains(1)); //true
+            Console.WriteLine("Value of Key 1: " + cache.Get(1));//ahmed
+            cache.Add(2, "Ali", 10);
+            Console.WriteLine("Contains Key 2 before remove? " + cache.Contains(2)); // True
+            cache.Remove(2);
+            Console.WriteLine("Contains Key 2 after remove? " + cache.Contains(2));
+            Thread.Sleep(4000);
+            Console.WriteLine("Contains Key 1 after 4 seconds? " + cache.Contains(1)); // False
+            Console.WriteLine("Value of Key 1 after expiry: " + cache.Get(1));//null
+            #endregion
         }
     }
 }
