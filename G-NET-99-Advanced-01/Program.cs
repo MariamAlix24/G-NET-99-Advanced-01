@@ -112,6 +112,13 @@
             Console.WriteLine(names.GetAt(0));
             Console.WriteLine(names.GetAt(10) ?? "Invalid Index!");
             #endregion
+            #region Q15
+            // Covariance allows you to use a more derived type (child class) 
+            // than originally specified.
+            // The 'out' keyword enables covariance on a generic type parameter (T).
+            // It restricts T to be used only as a return type (output) of methods, 
+            // never as an input parameter.
+            #endregion
         }
     }
 }
