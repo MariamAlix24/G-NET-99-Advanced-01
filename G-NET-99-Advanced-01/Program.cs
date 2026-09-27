@@ -126,6 +126,16 @@
             // It restricts T to be used only as an input parameter (method arguments), 
             // never as a return type.
             #endregion
+            #region Q17
+            // 1. Covariance (out):
+            //    - Allows using a more derived type (Child) than originally specified.
+            //    - Restricts T to output only (return types).
+            //    - Direction: Child -> Parent (IEnumerable<Dog> to IEnumerable<Animal>).
+            // 2. Contravariance (in):
+            //    - Allows using a less derived type (Parent) than originally specified.
+            //    - Restricts T to input only (method parameters).
+            //    - Direction: Parent -> Child (Action<Animal> to Action<Dog>).
+            #endregion
         }
     }
 }
