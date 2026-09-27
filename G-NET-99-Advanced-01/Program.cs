@@ -44,6 +44,18 @@
             int maxNumber = Math.FindMax(10, 20);
             Console.WriteLine(maxNumber);
             #endregion
+            #region Q6
+            // A generic interface is an interface defined with a type parameter <T>. 
+            // It allows defining a common set of method signatures that can work 
+            // with any data type.
+            Simple task = new Simple();
+            task.Add("mac");
+            string result = task.GetById(66);
+            Console.WriteLine(result);
+            task.Add("iphone17");
+            string result1 = task.GetById(695);
+            Console.WriteLine(result1);
+            #endregion
         }
     }
 }
